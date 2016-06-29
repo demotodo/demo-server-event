@@ -1,6 +1,7 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <script type="application/javascript">
+    <script type="text/javascript">
         var evtSource = new EventSource("sourceServlet");
 
         function appendEventList(elem) {

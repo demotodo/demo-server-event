@@ -50,7 +50,10 @@ public class SenderThread extends Thread {
     public void halt() {
         System.out.println("SenderThread.halt");
         this.stop = true;
-        messageService.notify();
+
+        synchronized (messageService) {
+            messageService.notify();
+        }
     }
 
 }

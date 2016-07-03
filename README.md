@@ -24,4 +24,4 @@
 * get the associated response object, `PrintWriter out = asyncContext.getResponse().getWriter()`
 
 ### Comments
-* using `asyncContext.getResponse().getWriter().println()` or `asyncContext.getResponse().getOutputStream()` can't detect the client disconnect well, so may lost my events after reconnect
+* using `asyncContext.getResponse().getWriter().println()` or `asyncContext.getResponse().getOutputStream()` can't detect the client disconnect well, so may lost some events after reconnect
